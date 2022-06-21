@@ -3,7 +3,7 @@ IncludeTemplateLangFile(__FILE__);
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?=LANGUAGE_ID?>">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -59,7 +59,7 @@ IncludeTemplateLangFile(__FILE__);
       <div class="container py-1">
         <div class="row align-items-center">
           <div class="col-8 col-md-8 col-lg-4">
-            <h1 class=""><a href="index.html" class="h5 text-uppercase text-black"><strong>HomeSpace<span class="text-danger">.</span></strong></a></h1>
+            <h1 class=""><a href="index.php" class="h5 text-uppercase text-black"><strong>HomeSpace<span class="text-danger">.</span></strong></a></h1>
           </div>
           <div class="col-4 col-md-4 col-lg-8">
             <nav class="site-navigation text-right text-md-right" role="navigation">
