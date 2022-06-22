@@ -54,7 +54,7 @@ $APPLICATION->SetTitle("Новости");
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"SEF_FOLDER" => "/about/news/",
 		"SEF_MODE" => "Y",
-		"SEF_URL_TEMPLATES" => Array("detail"=>"#IBLOCK_ID#/#ELEMENT_ID#.html","news"=>"","section"=>""),
+		"SEF_URL_TEMPLATES" => Array("detail"=>"#SECTION_CODE#/#ELEMENT_CODE#/","news"=>"","section"=>"#SECTION_CODE#/"),
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",
