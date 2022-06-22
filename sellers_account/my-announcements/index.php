@@ -57,7 +57,7 @@ $APPLICATION->SetTitle("Мои объявления");
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"SEF_FOLDER" => "/sellers_account/my-announcements/",
 		"SEF_MODE" => "Y",
-		"SEF_URL_TEMPLATES" => Array("detail"=>"#ELEMENT_CODE#.html","news"=>"","section"=>""),
+		"SEF_URL_TEMPLATES" => Array("detail"=>"#ELEMENT_CODE#/","news"=>"","section"=>""),
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",
