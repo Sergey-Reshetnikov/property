@@ -40,7 +40,7 @@ $this->setFrameMode(true);
 						<div class="inner d-flex">
 							<div class="col">
 								 <span>Площадь:</span> 
-                 <strong><?=$arItem["PROPERTY_TOTAL_AREA_VALUE"]?>м<sup>2</sup></strong>
+                 <strong><?=$arItem["PROPERTY_TOTAL_AREA_VALUE"]?> м<sup>2</sup></strong>
 							</div>
 							<div class="col">
 								 <span>Кроватей:</span> 
