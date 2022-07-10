@@ -125,12 +125,16 @@
   $current_link = $APPLICATION->GetCurPage();
   if ($current_link !== "/"): 
 
-  $APPLICATION->IncludeComponent("bitrix:breadcrumb", "navigation", Array(
-    "PATH" => "",	
-      "SITE_ID" => "s1",	
-      "START_FROM" => "0",	
-    ),
-    false
-  );?>
+  $APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb", 
+	"navigation", 
+	array(
+		"PATH" => "",
+		"SITE_ID" => "s1",
+		"START_FROM" => "0",
+		"COMPONENT_TEMPLATE" => "navigation"
+	),
+	false
+);?>
 
 <?endif?>

@@ -11,7 +11,6 @@ global $APPLICATION;
 //delayed function must return a string
 if(empty($arResult))
 	return "";
-
   $itemSize = count($arResult);
 
   $result = '<div 
@@ -29,10 +28,15 @@ if(empty($arResult))
     <div>
     <a href="'.SITE_DIR.'">Главная страница</a>
   ';
+
+  $last_item = '';
+
   for($index = 1; $index < $itemSize; $index++) {
     if ($arResult[$index]["LINK"] === $arResult[$index - 1]["LINK"]) {
+      $last_item .= '<span class="mx-2 text-white">•</span> <strong class="text-white">' . $APPLICATION->GetTitle() . '</strong>';
       continue;
     }
+
 	  $title = htmlspecialcharsex($arResult[$index]["TITLE"]);
     if ($arResult[$index]["LINK"] !== "" && $arResult[$index]["LINK"] !== $APPLICATION->GetCurPage()) {
       $result .= '
@@ -47,7 +51,8 @@ if(empty($arResult))
       ';
     }
   }
-  $result .= '</div></div></div></div></div>';
+
+  $result .= $last_item . '</div></div></div></div></div>';
   return $result;
 
 ?>

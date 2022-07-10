@@ -19,7 +19,7 @@ $this->setFrameMode(true);
 				<div class="select-wrap">
           <span class="icon icon-arrow_drop_down"></span>
 					<select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-						<option value="">Lot Area</option>
+						<option value=""><?=GetMessage("LOT_AREA")?></option>
 						<option value="1000">1000</option>
 						<option value="800">800</option>
 						<option value="600">600</option>
@@ -33,7 +33,7 @@ $this->setFrameMode(true);
 				<div class="select-wrap">
           <span class="icon icon-arrow_drop_down"></span>
 					<select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-						<option value="">Property Status</option>
+						<option value=""><?=GetMessage("STATUS")?></option>
 						<option value="For Sale">For Sale</option>
 						<option value="For Rent">For Rent</option>
 					</select>
@@ -43,7 +43,7 @@ $this->setFrameMode(true);
 				<div class="select-wrap">
           <span class="icon icon-arrow_drop_down"></span>
 					<select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-						<option value="">Location</option>
+						<option value=""><?=GetMessage("LOCATION")?></option>
 						<option value="United States">United States</option>
 						<option value="United Kingdom">United Kingdom</option>
 						<option value="Canada">Canada</option>
@@ -55,7 +55,7 @@ $this->setFrameMode(true);
 				<div class="select-wrap">
           <span class="icon icon-arrow_drop_down"></span>
 					<select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-						<option value="">Lot Area</option>
+						<option value=""><?=GetMessage("LOT_AREA")?></option>
 						<option value="1000">1000</option>
 						<option value="800">800</option>
 						<option value="600">600</option>
@@ -69,7 +69,7 @@ $this->setFrameMode(true);
 				<div class="select-wrap">
           <span class="icon icon-arrow_drop_down"></span>
 					<select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-						<option value="">Bedrooms</option>
+						<option value=""><?=GetMessage("BEDROOMS")?></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -82,7 +82,7 @@ $this->setFrameMode(true);
 				<div class="select-wrap">
           <span class="icon icon-arrow_drop_down"></span>
 					<select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-						<option value="">Bathrooms</option>
+						<option value=""><?=GetMessage("BATHROOMS")?></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -98,7 +98,7 @@ $this->setFrameMode(true);
 				</div>
 			</div>
 			<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-        <input type="submit" class="btn btn-primary btn-block form-control-same-height rounded-0" value="Search">
+        <input type="submit" class="btn btn-primary btn-block form-control-same-height rounded-0" value="<?=GetMessage("SEARCH")?>">
 			</div>
 		</form>
 	</div>
@@ -108,7 +108,7 @@ $this->setFrameMode(true);
     <div class="row mb-5">
       <div class="col-12">
         <div class="site-section-title">
-          <h2>New Properties for You</h2>
+          <h2><?=GetMessage("TITLE")?></h2>
         </div>
       </div>
     </div>

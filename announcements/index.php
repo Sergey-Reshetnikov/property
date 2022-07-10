@@ -18,7 +18,7 @@ $APPLICATION->SetTitle("Объявления");
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
-		"DETAIL_ACTIVE_DATE_FORMAT" => "d-m-Y",
+		"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
 		"DETAIL_DISPLAY_TOP_PAGER" => "N",
 		"DETAIL_FIELD_CODE" => array(
@@ -50,7 +50,7 @@ $APPLICATION->SetTitle("Объявления");
 		"IBLOCK_ID" => "5",
 		"IBLOCK_TYPE" => "announcements",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
-		"LIST_ACTIVE_DATE_FORMAT" => "d-m-Y",
+		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"LIST_FIELD_CODE" => array(
 			0 => "NAME",
 			1 => "PREVIEW_PICTURE",
