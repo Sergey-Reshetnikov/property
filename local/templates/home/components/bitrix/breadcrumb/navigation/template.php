@@ -4,9 +4,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 /**
  * @global CMain $APPLICATION
  */
-
 global $APPLICATION;
-
 
 //delayed function must return a string
 if(empty($arResult))
@@ -46,10 +44,8 @@ if(empty($arResult))
         }
     }
   }
-
   $result .= $last_item . '</div></div>';
   return $result;
-
 ?>
 
 
