@@ -13,24 +13,12 @@ if(empty($arResult))
 	return "";
   $itemSize = count($arResult);
 
-  $result = '<div 
-    class="site-blocks-cover inner-page-cover overlay" 
-    style="background-image: url(' . SITE_TEMPLATE_PATH .'/images/hero_bg_2.jpg);" 
-    data-aos="fade" 
-    data-stellar-background-ratio="0.5" 
-    id="bx_breadcrumb_'.$index.'" 
-    itemprop="itemListElement" 
-    itemscope itemtype="http://schema.org/ListItem"> '.$arrow.'
-    <div class="container">
-    <div class="row align-items-center justify-content-center text-center">
-    <div class="col-md-10">
-      <h1 class="mb-2">' . $APPLICATION->GetTitle() . '</h1>
-    <div>
+  $result = '
     <a href="'.SITE_DIR.'">Главная страница</a>
   ';
 
   $last_item = '';
-
+  
   for($index = 1; $index < $itemSize; $index++) {
     if ($arResult[$index]["LINK"] === $arResult[$index - 1]["LINK"]) {
       $last_item .= '<span class="mx-2 text-white">•</span> <strong class="text-white">' . $APPLICATION->GetTitle() . '</strong>';
@@ -46,13 +34,20 @@ if(empty($arResult))
         </a>
       ';
     } elseif ($arResult[$index] == $arResult[(count($arResult) - 1)]) {
-      $result .= '
-        <span class="mx-2 text-white">•</span> <strong class="text-white">' . $title . '</strong>
-      ';
+        if ($arResult[$index]["LINK"] === "") {
+          $prevTitle = htmlspecialcharsex($arResult[$index - 1]["TITLE"]);
+          $result .= '
+          <span class="mx-2 text-white">•</span> <strong class="text-white">' . $prevTitle . '</strong>
+        ';
+        } else {
+          $result .= '
+            <span class="mx-2 text-white">•</span> <strong class="text-white">' . $title . '</strong>
+        ';
+        }
     }
   }
 
-  $result .= $last_item . '</div></div></div></div></div>';
+  $result .= $last_item . '</div></div>';
   return $result;
 
 ?>

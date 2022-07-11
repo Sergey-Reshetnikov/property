@@ -2,4 +2,5 @@ bitrix
 !local/templates/home/components/bitrix
 !local/templates/home/components/bitrix/news/announcements/bitrix/
 !local/templates/home/components/bitrix/news/our_news/bitrix/
+!local/templates/home/components/bitrix/news/my_anouncements/bitrix/
 upload

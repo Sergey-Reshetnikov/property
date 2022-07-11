@@ -1,6 +1,6 @@
 <?php
 $arUrlRewrite=array (
-  19 => 
+  22 => 
   array (
     'CONDITION' => '#^/sellers_account/my-announcements/#',
     'RULE' => '',
