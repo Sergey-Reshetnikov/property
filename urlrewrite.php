@@ -80,7 +80,7 @@ $arUrlRewrite=array (
     'PATH' => '/site3/news/index.php',
     'SORT' => 100,
   ),
-  26 => 
+  30 => 
   array (
     'CONDITION' => '#^/site2/rew/#',
     'RULE' => '',
